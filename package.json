@@ -1,0 +1,14 @@
+{
+  "name": "tool-utiljs",
+  "version": "1.0.6",
+  "description": "utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hjwang",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0"
+  }
+}
