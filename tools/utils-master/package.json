@@ -22,6 +22,7 @@
   "author": "BigDeng",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.9",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -36,8 +37,10 @@
     "karma-power-assert": "^1.0.0",
     "mocha": "^5.2.0",
     "ora": "^3.0.0",
+    "outils": "^1.6.1",
     "power-assert": "^1.6.0",
     "rimraf": "^2.6.2",
+    "typescript": "^4.8.4",
     "webpack": "^4.16.1"
   },
   "dependencies": {}

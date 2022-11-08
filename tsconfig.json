@@ -1,0 +1,18 @@
+{
+    "include": ["src/**/*.ts", "src/*.ts"],
+    // "output": "./dist",
+    "paths": {
+      "src/*": ["src/*", "src/*/*"]
+    },
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",  
+      "moduleResolution": "node",
+      "lib": ["es2015", "dom"],
+      "strict": true,
+      "declaration": true,
+      "outDir":"lib",
+      "esModuleInterop": true,
+      "sourceMap": true ,
+    }
+}
