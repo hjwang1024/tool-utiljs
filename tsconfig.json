@@ -1,18 +1,26 @@
 {
-    "include": ["src/**/*.ts", "src/*.ts"],
-    // "output": "./dist",
-    "paths": {
-      "src/*": ["src/*", "src/*/*"]
-    },
     "compilerOptions": {
       "target": "es5",
       "module": "commonjs",  
       "moduleResolution": "node",
-      "lib": ["es2015", "dom"],
+      "lib": ["es5","es2015", "dom"],
       "strict": true,
       "declaration": true,
-      "outDir":"lib",
+      "outDir":"./lib",
+      "types": [
+        "node",
+        "webpack-env"
+      ],
       "esModuleInterop": true,
-      "sourceMap": true ,
-    }
+      // "sourceMap": true ,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    },
+    "include": ["src/**/*.ts", "src/*.ts"],
+    "exclude": [
+      "lib",
+      "node_modules"
+    ]
 }

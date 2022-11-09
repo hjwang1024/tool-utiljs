@@ -1,1 +1,7 @@
-export { sum } from './number/sum'
+
+
+
+export * from './number'
+export * from './func'
+ 
+
