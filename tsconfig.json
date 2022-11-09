@@ -8,12 +8,11 @@
       "declaration": true,
       "outDir":"./lib",
       "types": [
-        "node",
-        "webpack-env"
+        "node"
       ],
       "esModuleInterop": true,
       // "sourceMap": true ,
-      "baseUrl": ".",
+      "baseUrl": "./",
       "paths": {
         "@/*": ["src/*"]
       }

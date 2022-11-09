@@ -10,26 +10,29 @@ const config = {
         filename: `${pkg.name}.min.js`,
         path: path.resolve(rootPath, 'dist'),
         library: `${pkg.name}`,
-        libraryTarget: "umd",
+        libraryTarget: 'umd',
         umdNamedDefine: true
     },
     resolve: {
-        extensions: [".ts", ".js"]
+        extensions: ['.ts', '.js'],
+        alias: {
+            '@': path.resolve(rootPath, 'src')
+        }
     },
     module: {
         rules: [
             {
                 test: /\.ts$/,
-                loader: "ts-loader",
+                loader: 'ts-loader',
                 exclude: /node_modules/,
                 options: {
                     // 指定特定的ts编译配置，为了区分脚本的ts配置
-                    configFile: path.resolve(__dirname, './tsconfig.json'),
-                },
+                    configFile: path.resolve(__dirname, './tsconfig.json')
+                }
             },
             {
                 test: /\.js$/,
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 exclude: /node_modules/
             }
         ]

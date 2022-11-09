@@ -6,6 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "eslint --fix --ext .js,.ts src",
     "clean": "rimraf lib",
     "build": "npm run clean && tsc && webpack"
   },
@@ -25,6 +26,9 @@
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",

@@ -1,7 +1,2 @@
-
-
-
-export * from './number'
-export * from './func'
- 
+export * from './Number'
 

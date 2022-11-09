@@ -1,0 +1,9 @@
+# Node modules
+node_modules
+
+# Test
+/test
+
+# Output
+/lib
+/dist
